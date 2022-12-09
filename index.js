@@ -3,7 +3,7 @@ let trueNum = Math.floor(Math.random() * 1000) + 1
 let resultContainer = document.querySelector('.result-container')
 let answer = false
 
-console.log(trueNum)
+// console.log(trueNum)
 
 function inputValidation (input) {
     if (input === trueNum) {
@@ -58,7 +58,7 @@ document.querySelector('.input-container').addEventListener('submit', function (
     if (answer === true) {
         trueNum = Math.floor(Math.random() * 1000) + 1
         answer = false
-        console.log(trueNum);
+        // console.log(trueNum);
     }
 })
 
