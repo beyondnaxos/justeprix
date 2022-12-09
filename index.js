@@ -1,10 +1,8 @@
-// import a victory sound file
+
 let trueNum = Math.floor(Math.random() * 1000) + 1
 let resultContainer = document.querySelector('.result-container')
 let answer = false
 
-
-// console.log(trueNum)
 
 function inputValidation (input) {
     if (input === trueNum) {
@@ -62,7 +60,6 @@ document.querySelector('.input-container').addEventListener('submit', function (
     e.preventDefault()
     let input = document.querySelector('.input-container input').value
     inputValidation(parseInt(input))
-    // clean up the input field
     document.querySelector('.input-container input').value = ''
     if (answer === true) {
         trueNum = Math.floor(Math.random() * 1000) + 1
