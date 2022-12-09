@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: lightcoral;
+  background-color: #0b0c10;
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,26 +18,35 @@ body {
   margin-top: -35px;
 }
 
+.mainTitle{
+    color: #66fcf1;
+}
+
 .container {
     width: 80%;
     min-width: 400px;
     height: 350px;
     background-color: white;
+    border-radius: 30px;
 }
 
 .description {
-    background-color: lightblue;
+    border-radius: 25px 25px 0 0;
+    background-color: #1f2833;
     margin: 0;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     line-height: 30px;
     height: 100px;
+    color: #66fcf1;
 }
 
 .input-container {
     height: 150px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #45a29e;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,14 +55,15 @@ body {
 }
 
 label {
-    font-size: 20px;
+    font-size: 25px;
+
     font-weight: 600;
 }
 
 #number {
     width: 50%;
     height: 50px;
-    border: 1px solid black;
+    border: none;
     border-radius: 5px;
     text-align: center;
     font-size: 20px;
@@ -62,7 +72,7 @@ label {
 .result-container {
     height: 100px;
     width: 100%;
-    background-color: rgb(238, 229, 144);
+    background-color: #1f2833;
     display: flex;
     flex-direction: column;
     justify-content: center;
