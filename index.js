@@ -2,6 +2,9 @@
 let trueNum = Math.floor(Math.random() * 1000) + 1
 let resultContainer = document.querySelector('.result-container')
 let answer = false
+let counter = 0
+let counterDisplay = document.querySelector('.counter').textContent = counter
+
 
 
 function inputValidation (input) {
@@ -19,7 +22,6 @@ function inputValidation (input) {
         // text align center
         win.style.textAlign = 'center'
         resultContainer.appendChild(win)
-        
         answer = true
     } else if (input > trueNum) {
         console.log('Too high!')
@@ -61,10 +63,14 @@ document.querySelector('.input-container').addEventListener('submit', function (
     let input = document.querySelector('.input-container input').value
     inputValidation(parseInt(input))
     document.querySelector('.input-container input').value = ''
+    document.querySelector('.counter').textContent = ''
+    console.log(counter)
+    counter++
+    document.querySelector('.counter').textContent = counter
     if (answer === true) {
         trueNum = Math.floor(Math.random() * 1000) + 1
         answer = false
-        // console.log(trueNum);
+        counter = 0
     }
 })
 
