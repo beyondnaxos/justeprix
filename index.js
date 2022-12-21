@@ -74,20 +74,20 @@ document
 // then Observe counter , if counter is > 0 start the timer , if counter is 0 stop the timer
 
 // timer
-let timer = 0
-let timerDisplay = document.querySelector('.timer')
-let timerInterval = setInterval(function () {
-  timer++
-  timerDisplay.textContent = timer
-}, 1000)
+// let timer = 0
+// let timerDisplay = document.querySelector('.timer')
+// let timerInterval = setInterval(function () {
+//   timer++
+//   timerDisplay.textContent = timer
+// }, 1000)
 
-// Observe counter
-let counterObserver = new MutationObserver(function (mutations) {
-  mutations.forEach(function (mutation) {
-    if (mutation.target.textContent > 0) {
-      timerInterval
-    } else {
-      clearInterval(timerInterval)
-    }
-  })
-})
+// // Observe counter
+// let counterObserver = new MutationObserver(function (mutations) {
+//   mutations.forEach(function (mutation) {
+//     if (mutation.target.textContent > 0) {
+//       timerInterval
+//     } else {
+//       clearInterval(timerInterval)
+//     }
+//   })
+// })
